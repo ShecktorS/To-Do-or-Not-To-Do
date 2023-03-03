@@ -28,13 +28,31 @@ header {
 
 /* -------SECTIONS------- */
 .to-do-list {
-  border: solid red 1px;
-  height: calc(100vh - 140px);
+  border: solid #6eadff 4px;
+  height: calc(100vh - 170px);
   margin: 20px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Cg stroke='%23C2ADCC' stroke-width='0' stroke-opacity='0.85'%3E%3Crect fill='%23FBF8F5' x='-60' y='-60' width='98' height='240'/%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 5px;
 }
 
+.my-tasks {
+  height: 73%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.826);
+}
+
+.create-task {
+  height: 27%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: black;
+}
 /* -------INFO------- */
 info {
   position: fixed;
