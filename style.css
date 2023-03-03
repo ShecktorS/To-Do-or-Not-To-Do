@@ -18,6 +18,7 @@ header {
   align-items: center;
   font-size: 2.4em;
   text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.6);
+  user-select: none;
 }
 
 @media (max-width: 670px) {
@@ -51,13 +52,37 @@ header {
   height: 27%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.826);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.create-task input,
+.create-task button {
+  height: 90%;
+  border: solid #6eadff 3px;
+  font-size: 1.7em;
+}
+.create-task input {
+  width: 80%;
+  border-radius: 30px;
+  padding: 0 0 20px 20px;
+  outline: blue;
+}
+
+.create-task button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /* -------INFO------- */
 info {
   position: fixed;
-  bottom: 30px;
-  left: 30px;
+  bottom: 20px;
+  left: 20px;
   height: 60px;
   width: 60px;
   font-size: 1.6em;
