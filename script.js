@@ -1,22 +1,24 @@
 const bodyEl = document.body;
 const createTaskEl = document.querySelector(".create-task");
+const createTaskDiv = document.querySelector("#newTask");
 let tasks = [];
 
 createTaskEl.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(e.target[0].value);
-  //Resettare il valore dell'input
+  tasks.push(createTaskDiv.value);
+  createTask(tasks);
 });
 
-const createTask = (value) => {
+const createTask = (val) => {
   const task = document.createElement("div");
   const taskText = document.createElement("p");
-  const myTasks = document.querySelector("my-tasks");
+  const myTasks = document.querySelector(".my-tasks");
+  myTasks.textContent = "";
 
-  tasks.push(value);
+  taskText.textContent = val;
 
-  taskText.textContent = value;
+  createTaskDiv.value = "";
 
-  bodyEl.appendChild(task);
   task.appendChild(taskText);
+  myTasks.appendChild(task);
 };
