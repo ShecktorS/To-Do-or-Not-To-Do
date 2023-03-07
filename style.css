@@ -46,6 +46,13 @@ header {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: rgba(255, 255, 255, 0.826);
+  display: flex;
+  flex-direction: column;
+}
+
+.task-added {
+  width: 100%;
+  border: solid red 1px;
 }
 
 .create-task {

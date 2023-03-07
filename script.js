@@ -13,9 +13,11 @@ const createTask = (val) => {
   const task = document.createElement("div");
   const taskText = document.createElement("p");
   const myTasks = document.querySelector(".my-tasks");
-  myTasks.textContent = "";
 
-  taskText.textContent = val;
+  task.className = "task-added";
+  val.forEach((task) => {
+    taskText.textContent = task;
+  });
 
   createTaskDiv.value = "";
 
